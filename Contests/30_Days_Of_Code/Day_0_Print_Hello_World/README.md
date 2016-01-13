@@ -1,4 +1,4 @@
-Problem Statement
+<h3>Problem Statement</h3>
 
 Welcome to Day 0 and the wonderful world of coding! Check out the video tutorial here, or just jump right into the problem. The tutorial is based on Java, but you can submit your solution in other popular languages.
 
