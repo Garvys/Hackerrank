@@ -48,3 +48,7 @@ tip=(20×12)/100=2.4
 tax=(8×12)/100=0.96 
 final price=12+2.4+0.96=15.36 
 Officially, the price of the meal is $15.36, but rounded to the nearest dollar (integer), the meal is $15.
+
+<h5>Result</h5>
+
+Work perfectly!
