@@ -21,6 +21,7 @@ class Student{
         }
     
 };
+
 class Grade :  public Student{
     private:
          int score;   
@@ -29,26 +30,17 @@ class Grade :  public Student{
         {
             if(score < 40)
                 return 'D';
-            if(40 <= score && score < 60)
+            if(score < 60)
                 return 'B';
-            if(60 <= score && score < 75)
+            if(score < 75)
                 return 'A';
-            if(75 <= score && score < 90)
+            if(score < 90)
                 return 'E';
-            if(90 <= score && score <= 100)
+            if(score <= 100)
                 return 'O';
             return 'Z';
         }
-        Grade(string fname, string lname, int p, int s)
-        {
-            Student(fname,lname,p);
-            score = s;
-        }
-        Grade(string fname, string lname, int p)
-        {
-            Student(fname,lname,p);
-            score = 0;
-        }
+        Grade(string fname, string lname, int p, int s): Student(fname,lname,p), score(s) {}
 };
 
 int main() {
