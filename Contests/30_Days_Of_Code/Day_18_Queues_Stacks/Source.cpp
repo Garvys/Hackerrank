@@ -4,10 +4,38 @@
 #include <queue>
 #include <stack>
 #include <string>
+using namespace std;
 
 class Palindrome {
     //Write your code here
-
+public:
+	//Pushes a character onto a stack
+	void pushCharacter(char ch)
+	{
+		s.push(ch);
+	}
+	//Enqueues a character in a queue
+	void enqueueCharacter(char ch)
+	{
+		q.push(ch);
+	}
+	//Pops and returns the top characte
+	char popCharacter()
+	{
+		char c = s.top();
+		s.pop();
+		return c;
+	}
+	//Dequeues and returns the first character
+	char dequeueCharacter()
+	{
+		char c = q.front();
+		q.pop();
+		return c;
+	}
+private:
+	stack<char> s;
+	queue<char> q;
 };
 
 int main() {
